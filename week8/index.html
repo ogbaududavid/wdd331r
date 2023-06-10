@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <svg width="1000" height="2000"> 
+        <!-- define pattern -->
+        <defs>
+          <pattern id="myPattern" patternUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+            <rect x="0" y="0" width="60" height="60" fill="darkred" stroke="white" stroke-width="2" class="rectangle" /> 
+            <polygon points="30,0 0,60 60,20  0,20 60,60" style="fill:white; stroke: darkred; stroke-width: 2; fill-rule:nonzero;" />
+          </pattern>
+        </defs>
+        <!-- use symbol -->
+        <rect x="0" y="0" width="300" height="420" rx="20" ry="20" fill="url(#myPattern)" style="stroke:gray; stroke-width:2"/>
+        <rect x="60" y="120" width="180" height="180" fill="darkred" stroke="white" stroke-width="2" />
+
+        <g>
+            <rect x="400" y="0" width="300" height="420" fill="darkred" rx="20" ry="20" />
+            <rect x="420" y="20" width="260" height="380" fill="white" rx="5" ry="5" />
+            <rect x="460" y="60" width="180" height="300" fill="darkred" />
+            <circle cx="460" cy="60" r="20" fill="white" stroke-width="5" stroke="darkred" />
+            <circle cx="640" cy="60" r="20" fill="white" stroke-width="5" stroke="darkred" />
+            <circle cx="460" cy="360" r="20" fill="white" stroke-width="5" stroke="darkred" />
+            <circle cx="640" cy="360" r="20" fill="white" stroke-width="5" stroke="darkred" />
+        </g>
+    </svg>
+    
+        
+    
+</body>
+</html>
