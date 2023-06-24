@@ -1,0 +1,10 @@
+@media screen and (min-width: 440px) {
+    .summary {
+        display: flex;
+        max-width: 500px;
+    }
+    .summary--img {
+        width: 40%;
+        order: 2;
+    }
+}
